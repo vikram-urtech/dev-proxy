@@ -211,6 +211,7 @@ async function main() {
     console.log("====================================================================");
     console.log(`📱 User Web:        ${publicUrl}/            -> Host Port ${webPort}`);
     console.log(`⚡ Superadmin:      ${publicUrl}/superadmin  -> Host Port ${superadminPort}`);
+    console.log(`🖼️  MinIO Storage:   ${publicUrl}/minio/      -> LAN 192.168.0.101:9010`);
     console.log(`🔌 API Backend:     ${publicUrl}/api         -> Host Port ${apiPort}`);
     console.log(`💻 Local Proxy:     http://localhost:${proxyPort}`);
     console.log(`📊 Ngrok Dashboard: http://localhost:4040`);
