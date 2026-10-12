@@ -195,7 +195,7 @@ async function main() {
 
   // 1. Generate Nginx configuration from .env variables
   console.log("📝 Generating Nginx configuration for ports (Web: " + webPort + ", API: " + apiPort + ", Superadmin: " + superadminPort + ")...");
-  generateNginxConfig();
+  if (!fs.existsSync("conf.d/default.conf")) { generateNginxConfig(); }
 
   // 2. Start Docker containers
   console.log("🐳 Starting Docker containers (universal-dev-proxy + dev-proxy-ngrok)...");

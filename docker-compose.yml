@@ -15,7 +15,7 @@ services:
     image: ngrok/ngrok:latest
     container_name: dev-proxy-ngrok
     restart: unless-stopped
-    command: "http reverse-proxy:80 --host-header=localhost"
+    command: "http reverse-proxy:80"
     environment:
       - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
     ports:

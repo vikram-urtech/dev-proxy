@@ -7,6 +7,7 @@
     "dev": "node run.mjs",
     "start": "node run.mjs",
     "stop": "docker compose down",
+    "restart": "docker compose restart",
     "logs": "docker compose logs -f",
     "logs:proxy": "docker logs -f universal-dev-proxy",
     "logs:ngrok": "docker logs -f dev-proxy-ngrok"
