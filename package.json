@@ -1,0 +1,14 @@
+{
+  "name": "universal-dev-proxy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node run.mjs",
+    "start": "node run.mjs",
+    "stop": "docker compose down",
+    "logs": "docker compose logs -f",
+    "logs:proxy": "docker logs -f universal-dev-proxy",
+    "logs:ngrok": "docker logs -f dev-proxy-ngrok"
+  }
+}
